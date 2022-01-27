@@ -60,12 +60,12 @@ void *slist_get_node(s_list *head, size_t idx){
 }
 
 /**
- * @brief 
+ * @brief search for specific value in the list
  * 
  * @param head original list  
  * @param data to find
  * @param compar function should return 0 if arguments are equal
- * @return 0 if data in the list, otherwise it return -1 
+ * @return the position of the data in the list 
  */
 
 int slist_position(s_list *head, void *data, int (*compar)(void *, void *)){
