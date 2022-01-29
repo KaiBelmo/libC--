@@ -16,13 +16,13 @@ Associative containers:
  - [ ] multiset
  - [ ] multimap
  
-Unordered associative containers
+Unordered associative containers:
  - [ ] unordered_set
  - [ ] unordered_map
  - [ ] unordered_multiset
  - [ ] unordered_multimap
 
-Container adaptors
+Container adaptors:
  - [ ] queue
  - [ ] stack
  - [ ] priority_queue
