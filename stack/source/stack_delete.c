@@ -5,8 +5,8 @@
 
 /**
  * @brief delete all elements in the container
- * 
- * @param Stack 
+ *
+ * @param Stack
  * @return return empty container
  */
 
@@ -28,12 +28,12 @@ stack  *stack_clear(stack *Stack){
 stack  *stack_pop(stack *Stack){
     if (stack_empty(Stack) == true){
         printf("Empty Stack");
-        return NULL;
+        return Stack;
     } else if (Stack->len == 1){
         free(Stack->top);
         Stack->top = Stack->buttom = NULL;
         Stack->len--;
-    } else {    
+    } else {
         node *tmp = Stack->buttom, *prev = NULL;
         while (tmp->next != NULL){
             prev = tmp;
