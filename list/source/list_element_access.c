@@ -8,6 +8,10 @@
  * @param list container
  */
 void    *list_front(d_list *list){
+    if (list_empty(list) == true){
+        printf("Empty list\n");
+        return NULL;
+    }
     return list->head->data;
 }
 
@@ -17,6 +21,10 @@ void    *list_front(d_list *list){
  * @param list container
  */
 void    *list_back(d_list *list){
+    if (list_empty(list) == true){
+        printf("Empty list\n");
+        return NULL;
+    }
     return list->tail->data;
 }
 
@@ -26,6 +34,10 @@ void    *list_back(d_list *list){
  * @param list container
  */
 node    *list_getmiddle(d_list *list){
+    if (list_empty(list) == true){
+        printf("Empty list\n");
+        return NULL;
+    }
     node *fast = list->head->next, *slow = list->head;
     while (fast != NULL && fast->next != NULL){
         fast = fast->next->next;
@@ -41,7 +53,10 @@ node    *list_getmiddle(d_list *list){
  * @param idx   index
  */
 void    *list_get_node(d_list *list, uint32_t idx){
-    if(idx >= list->len){
+    if (list_empty(list) == true){
+        printf("Empty list\n");
+        return NULL;
+    } else if(idx >= list->len){
         printf("idx = %d out of bounds\n", idx);
         return NULL;
     }
@@ -63,6 +78,10 @@ void    *list_get_node(d_list *list, uint32_t idx){
  * @return the position of the data in the list 
  */
 int32_t list_position(d_list *list, void *data, int (*compar)(void *, void *)){
+    if (list_empty(list) == true){
+        printf("Empty list\n");
+        return -1;
+    }
     int j = 0;
     for (node *i = list->head; i != NULL; i = i->next, j++){
         if (compar(i->data, data) == 0){
