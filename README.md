@@ -8,7 +8,7 @@ Sequence containers:
  - [x] forward_list
  - [x] list
  - [x] vector
- - [ ] deque
+ - [x] deque
  
 Associative containers:
  - [ ] set
