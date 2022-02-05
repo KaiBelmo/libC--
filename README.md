@@ -23,6 +23,6 @@ Unordered associative containers:
  - [ ] unordered_multimap
 
 Container adaptors:
- - [ ] queue
+ - [x] queue
  - [x] stack
  - [ ] priority_queue
