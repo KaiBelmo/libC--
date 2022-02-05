@@ -105,8 +105,9 @@ d_list  *list_pop_back(d_list *list){
  * @param list container
  */
 
-void    list_delete(d_list *list){
+d_list	*list_delete(d_list *list){
     if (list->head != NULL)
       list = list_clear(list);
     free(list);
+	return list;
 }

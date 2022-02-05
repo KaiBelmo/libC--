@@ -46,7 +46,7 @@ d_list  *list_insert_aftr_idx(d_list *, void *, uint32_t);
 int32_t list_position(d_list *, void *, int (*)(void *, void *));
 d_list  *list_delete_node(d_list *, void *, int (*)(void *, void *));
 d_list  *list_concat(d_list *, d_list *);
-void    list_delete(d_list *);
+d_list	*list_delete(d_list *);
 
 //     unimplemented!
 d_list  *_list_merge(d_list *, d_list *, int (*)(void *, void *));
