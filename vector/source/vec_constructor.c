@@ -19,7 +19,7 @@ vector *vec_new(int64_t alloc, int32_t sizeof_data, bool clear){
     int64_t tmp = alloc;
     vec = (vector *)malloc(sizeof(vector));
     if (vec == NULL){
-        perror("malloc 1");
+        perror("malloc");
         return NULL;
     }
     if (alloc <= 0){
@@ -29,7 +29,7 @@ vector *vec_new(int64_t alloc, int32_t sizeof_data, bool clear){
         vec->data = malloc(sizeof_data * alloc);
     }
     if (vec->data == NULL){
-        perror("malloc 2");
+        perror("malloc");
         free(vec);
         vec = NULL;
     } else {
