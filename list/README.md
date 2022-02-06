@@ -56,7 +56,6 @@ void print(d_list *list){
 }
 
 int main(int argc, char* argv[]){
-    (void)argc;(void)argv;
     d_list *list = list_new(NULL);
     list = list_push_front(list, "aaaa");
     list = list_push_front(list, "uuuu");

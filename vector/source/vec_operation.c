@@ -48,7 +48,7 @@ int32_t  vec_find_s(vector *vec, void *value, int64_t start, int64_t end, int8_t
 int32_t  vec_find(vector *vec, void *value, int8_t (*compar)(void *, void *)){
     for (int i = 0; i < vec->len; i++){
         if (compar(vec->data[i], value) == 0)
-            return 0;
+            return i;
     }
     return -1;
 }
