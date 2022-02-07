@@ -4,8 +4,6 @@
 #include <stdbool.h>
 
 /**
- * @brief iterate over the whole deque and counte nodes
- * 
  * @return the number of elements in the deque
  */
 uint32_t    deque_size(deque *Deque){
