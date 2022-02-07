@@ -11,7 +11,7 @@ singly linked list queue implementation.
 * `struct queue` containes:
     * `front`: points to the first node of the queue
     * `rear`: points to the last node of the queue
-    * `len`: length of the stack
+    * `len`: length of the queue
 
 #### functions
 
@@ -26,7 +26,7 @@ singly linked list queue implementation.
 | `queue_front`          | access the first element            | O(1)             |
 | `queue_back`           | access the last element             | O(1)             |
 | `queue_push`           | inserts element at the end          | O(1)             |
-| `queue_concat`         | concat two stacks                   | O(1)             |
+| `queue_concat`         | concat two queues                   | O(1)             |
 | `queue_swap`           | swap contents                       | O(1)             |
 | `queue_delete`         | container destructor                | O(1)             |
 
