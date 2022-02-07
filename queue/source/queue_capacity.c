@@ -4,10 +4,9 @@
 #include <stdbool.h>
 
 /**
- * @brief iterate over the whole container and counte nodes
+ * @brief return the number of elements in the queue
  * 
  * @param Queue
- * @return the number of nodes in the container
  */
 
 int32_t queue_size(queue *Queue){
