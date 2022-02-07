@@ -3,7 +3,7 @@
 dynamic array library.
 
 #### struct
-* `struct node` containes:
+* `struct vector` containes:
     * `data`: array of pointers  
     * `alloc`: size of allocated storage
     * `len`: number of elements in array
