@@ -10,6 +10,8 @@ dynamic array library.
     * `clear`: if clear is set to 1 (true), the buffer should be initialized to 0
     * `sizeof_data`
 
+#### functions
+
 | function name          | description                         | time complexity  |
 | ---------------------- | -------------------------------     | ---------------- |
 | `vec_new`              | vector constructor                  | O(1)             |
