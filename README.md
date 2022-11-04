@@ -25,4 +25,4 @@ Unordered associative containers:
 Container adaptors:
  - [x] queue
  - [x] stack
- - [ ] priority_queue
+ - [x] priority_queue
