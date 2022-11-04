@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 /**
- * @brief iterate over the whole stack and counte nodes
+ * @brief returns the number of elements
  * 
  * @param Stack
  * @return the number of elements in the stack
